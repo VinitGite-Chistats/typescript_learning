@@ -1,0 +1,48 @@
+What is Typescript:
+1. A strongly typed superset of JS
+2. Adds static typing to the language and other features too
+3. Provides better error checking, enhanced tools, improved code readability.
+
+** Dynamic Type and Static Type.
+1. All other programming language are dynamically type or statically type.
+    1.1 Dynamic Type: It means the type of variables can change at runtime.
+    1.2 statically Type: It means the type of variables cannot change once it's declared
+
+Ex: For Dynamic Type
+// Javascript Dynamic Typing Example.
+// Declaring an variable without specifying its type
+
+let myVar = 10 // Initially it's a number
+console.log(`The value of myVar is: ${myVar} and it's type is ${typeof myVar}`);
+
+myVar = 'Hello World'
+console.log(`Now the value of myVar is: ${myVar} and it's type is ${typeof myVar}`);
+
+Output: 1. The value of myVar is: 10 and it's type is number.
+        2. Now the value of myVar is: Hello World and it's type is string 
+
+* So here as we can see in the above code anytime in the program we can go ahead and change the type of variable and it can be store something completely different.
+
+Ex: For Static Type
+// Go: Which is an static type programming language
+package main
+
+import "fmt"
+
+func main() {
+    // Declare a variable with a specific type
+    var myVar int = 10 // myVar is explicitly declared as an integer
+    fmt.Printf("The value of myVar is: %v and its type is: %T\n", myVar, myVar)
+
+    // Attempting to change the type of myVar will result in a compile-time error
+    // myVar = "Hello World" // This line would cause an error if uncommented.
+
+    // Correct way to declare a new variable with different type.
+    var myVarOther string = 'Hello World'
+    fmt.Printf("The value of myVarOther is: %v and its type is %T\n", myVarOther, myVarOther)
+}
+
+2. In dynamic type language it's really difficult for us to understand what's supposed to be stored in different variables and how we interact with the different types.
+3. In static type language the advantage of using a is it helps to improve the performance of the program while in developing phase.
+4. By seeing this Typescript adds the static typing ability to the Javascript language. We keep the flexibility of Javascript while adding the enforcement and the great aspects of statically typed language.
+5. So when we work on larger project Typescript really make sure that its clear what everything's doing.
