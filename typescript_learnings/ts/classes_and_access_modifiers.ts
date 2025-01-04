@@ -46,6 +46,8 @@ class Car1 {
 const newCar = new Car1('Tesla', 'Modal 10', 2024)
 
 console.log(newCar.getModal());
+// console.log(newCar);
+
 
 // ----------------------------------------------------------------------------------------------------------------------------------------------------
 //  Inheritance = This will help to use existing class properties with other class properties using extends
@@ -61,7 +63,7 @@ class Animal { // parent
 
 class Dog extends Animal { // child class
     constructor(name: string) {
-        super(name) // 
+      super(name); // The super keyword is used to access properties on an object literal
     }
 
     // makeSound(): void {
