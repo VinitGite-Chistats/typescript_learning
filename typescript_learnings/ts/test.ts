@@ -181,7 +181,7 @@ printIDFn("abc");
 printIDFn(101);
 
 // --------------------------------------------------------------------------------------------------------------------------------------------------
-// Interface
+// Interface = Interfaces are a feature of TypeScript that allows us to define the structure or shape of an object and specify the properties and methods that an object has or should have. 
 
 interface Person {
   name: String;
@@ -214,7 +214,7 @@ console.log(`Add two number: ${add(5, 4)}`);
 console.log(`Subtract two number: ${sub(5, 4)}`);
 
 // --------------------------------------------------------------------------------------------------------------------------------------------------
-// Type alias
+// Type alias = TypeScript type aliases improve code readability and maintainability by providing custom names for types.
 
 // type AliasName = TypeDefinition
 type UserID = string;
@@ -325,4 +325,5 @@ let config: {
 };
 
 // --------------------------------------------------------------------------------------------------------------------------------------------------
-// Functions
+
+
