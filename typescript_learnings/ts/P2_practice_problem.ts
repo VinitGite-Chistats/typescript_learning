@@ -61,26 +61,29 @@ console.log(userDetails.getBalance());
 */
 
 class Employee {
-    constructor(public name: string, public salary: number) { }
-    getDetails(): string {
-        return `Employees ${this.name}, Salary: ${this.salary}`
-    }
+  //  Readonly property = It does not allow to change the data in class (except for constructor)
+  readonly greetings: string = 'hi'
+  constructor(public name: string, public salary: number) {
+    this.greetings = "Vinit"; // It will allow
+  }
+  getDetails(): string {
+    // this.greetings = "Vinit"; // error 
+    return `Employees ${this.name}, Salary: ${this.salary}`;
+  }
 }
 
 class Manager extends Employee {
-    constructor(name: string, salary: number, public department: string) {
-        super(name, salary)
-    }
+  constructor(name: string, salary: number, public department: string) {
+    super(name, salary);
+  }
 
-    // getDetails(): string {
-    //     return `Manager: ${this.name}, Salary: ${this.salary}, Department: ${this.department}`
-    // }
+  // getDetails(): string {
+  //     return `Manager: ${this.name}, Salary: ${this.salary}, Department: ${this.department}`
+  // }
 }
 
-const emp = new Employee('Vinit', 50000)
-const mgr = new Manager('Shiv', 60000, 'IT')
-
+const emp = new Employee("Vinit", 50000);
+const mgr = new Manager("Shiv", 60000, "IT");
 
 console.log(emp.getDetails());
 console.log(mgr.getDetails());
-
